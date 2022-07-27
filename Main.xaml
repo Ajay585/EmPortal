@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="836.8,6006.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="836.8,6485.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="66">
+    <scg:List x:TypeArguments="x:String" Capacity="33">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -37,7 +37,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="62">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -72,25 +72,26 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="475.2,5941.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap:VirtualizedContainerService.HintSize="475.2,6420.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="433.6,5848.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="911513e0-8160-489a-975e-0d14faf51e50" Version="V2">
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: New Tab" sap:VirtualizedContainerService.HintSize="433.6,6328" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="911513e0-8160-489a-975e-0d14faf51e50" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,5632" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,6111.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="Pass" />
               <Variable x:TypeArguments="x:String" Default="ajay.kalali@edvenswatech.com" Name="email" />
               <Variable x:TypeArguments="x:String" Default="emportal automation" Name="topic" />
               <Variable x:TypeArguments="x:String" Default="8:00" Name="Hours" />
               <Variable x:TypeArguments="x:String" Name="Title" />
+              <Variable x:TypeArguments="x:String" Name="Category" />
             </Sequence.Variables>
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -150,7 +151,7 @@
                 <uix:TargetAnchorable BrowserURL="http://emportal.me/" DesignTimeRectangle="704, 704, 525, 48" ElementType="Button" FriendlyName="'Sign In'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='button' class='formBtn' aaname='Sign In' check:text='Sign In' /&gt;" Guid="d6d8758e-9baa-4eed-8c71-5f5dc0f58ee3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAhEAAAA0CAYAAAA0YGq+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAMWSURBVHhe7d2xTuMwAIBhNp6Kh4InQOpLICQmZkZYEBIrDCydGJgQGwPjDSflZFIndu3QYl3vCHzDJyHqpGJw/MvO6fZ+/3ruAAA+S0QAAE2KiDh/uO0Ozk66/cWi2zs+BgB+sNADoQtCH6w3QxYRh1cX1RsAAIROSLthiIhQGLULAACidEdiiIiwVVEbDAAQhV4oIsI7EADAJqEXioioDQQAWCciAIAmIgIAaCIiAIAmIgIAaCIiAIAmIgIAaCIiAIAmIgIAaCIiAIAmIgIAaCIiYMaOHp+GSTx4u+uO1sadvkx/tlsX3fXb//puYNfic0dEwKwki3PVsjtNxosIYBfiM0dEwJzcL4fJO+nlpn7tPyUi4DuLzxsRATMyHmM8ddeX6WfpDsW4GzG5E5HFSH+vYuzlXfe6GrO8Tz5PrhnuV6hHRPYdyf3ffYn4AbYR562IgBnJ3oXYYtGtRUT1fYpUJSLqPgqJDRExRUjALMQ5KyJgVm665WrO5vJ3IaIyIpLrp8KiGhHj/dOxr48Xw3flNkfEeG36N9X/DuBrifNYRMDcfLhDkO8OFBGRHGOEI4rxvpVFP/mePBbGRb89IvJYGMNERMAc9PNVRMCMbd6VmI6I8iiiGJtERB4cfyEikt8FIgLmpZ+vIgK+jfSYIS76IgLYhX6+igiYkWTnYW0RfpccVcTFfToiPnecISKAVD9fRQTMyrAIf2jcZSgX7XqIpLsYIgLYpJ+vIgJmJomAKck/k6wt2lkwDJ66VzsRwJb6+SoiYJamQmDjew5RcqwRF+5irIgAJvTzVUQAK5PBAbBGRMBPlOwu5LGwze4CQG9oh+GHyiDgu0mOGarKIxGAdfGZISLgBxqOLjLeRwC2E58bIgIA+BQRAQA0EREAQBMRAQA0EREAQBMRAQA0EREAQBMRAQA0EREAQJMiIvYXi+pAAIAo9EIREQdnJ9XBAABR6IUiIs4fbquDAQCi0AtFRASHV/4LYACgLnRC2g1ZRAShMMJWhXckAIDQA6EL0h2IqIgIAIBtiAgAoImIAAAaPHd/AH1ezKUnadJeAAAAAElFTkSuQmCC" InformativeScreenshot="7b496f18db706aef1ef1fec4052454c5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='0.3807006648295541' title='EmPortal' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
               </uix:NClick.Target>
             </uix:NClick>
-            <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="Delay_2" />
             <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_3" IsPassword="False" Label="Enter Title" Title="Enter Title">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[Title]</OutArgument>
@@ -164,6 +165,11 @@
             <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_5" IsPassword="False" Label="Enter NoHours" Title="Enter NoHours">
               <ui:InputDialog.Result>
                 <OutArgument x:TypeArguments="x:String">[Hours]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="333.6,241.6" sap2010:WorkflowViewState.IdRef="InputDialog_6" IsPassword="False" Label="Enter Category" Title="Enter Category">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[Category]</OutArgument>
               </ui:InputDialog.Result>
             </ui:InputDialog>
             <uix:NClick ClickType="Single" DisplayName="Click 'Tasks'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911513e0-8160-489a-975e-0d14faf51e50" Version="V1">
@@ -255,7 +261,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '▼'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="911513e0-8160-489a-975e-0d14faf51e50" Text="Training[k(enter)]" Version="V1">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into '▼'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="333.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="911513e0-8160-489a-975e-0d14faf51e50" Text="[Category]" Version="V1">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="http://emportal.me/home#/tasks" DesignTimeRectangle="1270, 238, 139, 30" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='handsontableInput' aaname='' /&gt;" Guid="a84e514b-a558-40a4-accd-60ca7b13520b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI8AAAAiCAYAAABm4YqjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADNSURBVHhe7ds9CsIwAIbhnNH7CJ7BU7h4D4ceppuIQyRg6l/A+q0+D3zQ0ozvVEiZ57n2TdO0PJuN9tyIeOynDePZ7M9mq7bE00pqGx0yG603U8puV9v6h+3xUg+nq9nLWhe9kd7MRzztILxrXUTxlFLuT/wr8RATDzHxEBMPMfEQEw8x8RATDzHxEBMPMfEQEw8x8RATDzHxEBMPMfEQEw8x8RCL4wHxEBMPsVXxuPRno6269Gf2beKxeEs8/dK62a9bfuC0F/jm0UmtNyJkZdRT68lNAAAAAElFTkSuQmCC" InformativeScreenshot="4e572f5128be53645b30d700fbabd0db.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='0.3650740538990378' title='EmPortal - Ajay, Kalali' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -266,6 +272,17 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Development UI'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911513e0-8160-489a-975e-0d14faf51e50" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://emportal.me/home#/tasks" DesignTimeRectangle="1272, 269, 136, 30" FriendlyName="'Development UI'" FullSelectorArgument="&lt;webctrl parentid='ht_03036be4fe1d1b48' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ht_03036be4fe1d1b48' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='listbox htDimmed' /&gt;" Guid="d5f31b6a-f5fb-4d06-862c-0248dad2d32f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIwAAAAiCAYAAACN1jGgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAVBSURBVHhe7ZjfZ2NpGMf7P+XqXJRQSi9ys8nNhKHHXGyUCWWjTCyjSp2hIkvNRWUZsUyEdXKxUkaXIUOdlMrdKdVlyMUQllCjhO8876+Tc06SzjnZTmvb58tL3jfv+57nfZ7P+3Plp9++ghOnJGnl9WusnJ2dgROnpEkCw2J9T4YTBoaVSAwMK5UYGFYqMTCsVGJgWKnEwLBSKQUwI7gvM8hkZpO1UUSl7mIw0lUfSuc1sqcM94vOP1aNfbh7TQx09j61BDA2qm8PcRikGqpbBWQFPKtltC5vdP0H0BMBZtQp0zhr/xdgFhj62UV5lf7PH2LwUMwwMD9cdwcMaXxcof8zqH4Y6xLSZAy/48DesOR/1gatUO88jCbqb//3HJU76MUhmwxQIwBzR74uoP4vXDgv1mHJ1Wwd9q9NeOFtcB4wkxG8d9WF3xcyAfBGHhrbqn9Rz+n4GAf19Pjr1LbfQFn3l9104IpVdTJEd9/Gupg0ZFv5KPqN7/lBKGLHL2bVpnHuu7i6VnUGdRGDUKrfLzZ3CgxuenDEIA48XTBCdydLgy6Sc7rwTj10KXhFcqq17WIonPVPC0Vq43yKEUPBtzI5NC5UdkQwZjMWiq+a6FI/3nET1WfkfNoG3aGqMwMMBdHdFgEqoCK/34NbL8lABN8nqUAVUMhT/3st9ES9A1uCU3g7gLJMjz9P9dZKqHV60oZKnspyVexuZ2fa2m1jWAI/iFqBHVmU6Ewo+zL2vvGkHeNLantQpHoVNIUfLkOT8x50t8DARyNHdV66VJv4OXXIcTaal+rfQASJTcF3ToULhmhtUpv9ng6M0qBOgX7ewpXI3HhwyLn2HzI31eRKtjXOjAOjVrwcav1wz1T+Udhlvm8CRXDQbA3XvHpvU7mN1meRM+MPAUq6+eTItjmaJNO2ZNdzqrvdTeGHqR3lP0MfIElfhPxuVqL7XVuU7hgYXUcD4x3Q7/VdtMRMiCSameQYs5wO2yIwoW1Jb0fBDO0LENax247346G5E7IpAswYJ6/oPwNdWBMNtoZUBSC0Mhl9oXOZCOBfYjR6bD/TiqD+VZLfzBCUOq8lx57SD8qOUgRIobh9jwiYAQ7FHi4dZerfkvQMNIEJtiW5HZmZbRw0p32QyuiKjiLA6O/HVi6lKNiLA0Dgiv5lQKNtAhlgznVeS541UvohDobR4wVmfIIqOcC6zcFzNaY9frq1yCV4sxXM5EWOnNEPAsaic8zC8SQFJoEfnhww6sxg9uQb9PZF/Tk3oDmSbVcdeNdqOyp3pu4154SZg3FcEWASbEn6cK4CUMVJ/PyoVz5161sWmOR+eFrABO8wDfj61K8Oe7OHOAxFILJ0RgmFUq5OFmp1sR1V0P1XlwvpQ68IgLlRSIlbENmUfaGhiABjAF586N39WxGiAjBrp39UoHJjy7LAJPfDIwVmzktv8DZCgwr7JLjWmusqXQnbDkprVDdPA9ZvC0p6RRD97HQpF9WQnCS+YT2jw+NHOjAet+Bs0VWVrqG1cw1EDJh012rx7el1trVXlFCVO8HGuDQwSf2QFJjxhyrlc6i+p6t9cK1eYF/q8tu1BDCzKZsvEURd+PEoC8UezjJrBZT23bl1zdYTefgLadRvTuGk4Ba2HLgXobpxYITmPNw57cGcBzNq1z8JHgaz+Qoap2FX/gdghBL4ISkwuPbR1A+MwcVhkX2py29XCmAerxYFijUrBobEwCQXA0NiYJKLgSExMMnFwLBSiYFhpRIDw0olBoaVSgwMK5UEJyIxMKxE4hWGlUoMDCuVFCfAN8snKLkZYEfXAAAAAElFTkSuQmCC" InformativeScreenshot="82b04c9aacf4cf61bfe9cdf896ee2b97.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='0.6895522147259754' title='EmPortal - Ajay, Kalali' /&gt;" SearchSteps="FuzzySelector" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1270, 238, 139, 30" ElementType="InputBox" FriendlyName="'TEXTAREA'" FullSelectorArgument="&lt;webctrl tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TEXTAREA' type='' class='handsontableInput' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI8AAAAiCAYAAABm4YqjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADNSURBVHhe7ds9CsIwAIbhnNH7CJ7BU7h4D4ceppuIQyRg6l/A+q0+D3zQ0ozvVEiZ57n2TdO0PJuN9tyIeOynDePZ7M9mq7bE00pqGx0yG603U8puV9v6h+3xUg+nq9nLWhe9kd7MRzztILxrXUTxlFLuT/wr8RATDzHxEBMPMfEQEw8x8RATDzHxEBMPMfEQEw8x8RATDzHxEBMPMfEQEw8x8RCL4wHxEBMPsVXxuPRno6269Gf2beKxeEs8/dK62a9bfuC0F/jm0UmtNyJkZdRT68lNAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
             <uix:NClick ClickType="Double" DisplayName="Click '8'" sap:VirtualizedContainerService.HintSize="333.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="911513e0-8160-489a-975e-0d14faf51e50" Version="V1">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="http://emportal.me/home#/tasks" DesignTimeRectangle="1684, 239, 188, 30" ElementType="Text" FriendlyName="'8'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableCol='9' tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='htMiddle' tag='TD' aaname='8' check:innerText='8' /&gt;" Guid="1d37a4a2-571c-4ba9-ba9d-edadd4647d6d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMAAAAAiCAYAAAAJUNaOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHZSURBVHhe7doxSyNBGMZxv9NUKQIBwS6VaQxYiI3VwhVycH4ASRVSiIXk4LAKBxKLI9dcF0EkcOyBsIXEyk4wLFgcCM/N6MityBVTzr3/H7wkM9u+z87M7q6tVistFguFX4qyUM1+JwCUuXoTgDCgKKu1Ji/8Aaxo9jsBgDkEAKYRAJhGAGAaAYBpBACmpQfgcanp4Y422k7OOXU29zW+vI8XgbykBeCp0njTN367r4MvM11dznT6qa+Wa6n4RgiQn7QA/Dp6bvbBxe84EdSaffSh6I5VxRkgF2kB+Dn0256+JrdxHJWjsB0aqoxjIBdpAXi80mDdqfVhoqp+maqvJyr8eaB3XKq5LgA5SAtA8FDqaPflAPxaO59L1U/xOpCRxBXAN/9WS259T8PzeeMQ3NH+2ZIVANlJCkB10pVrF5rexYno7qzwK0FPpzdxAshEQgCWmmz7Lc/h/P2dvv6hA78VKs55FIq8EACYlhCAuAVy/9oCdTW+jhNAJpICoIe5BuFNsD8ED76GN8FzTUd76vi7f2/EY1DkJy0AQV29+xZo+L3iMSiylB4A4D9CAGAaAYBpBACmEQCYRgBgGgGAaQQApr0JQBhQlNViBYA5zX4nADDnb79LfwB25eEj7zQmEQAAAABJRU5ErkJggg==" InformativeScreenshot="18293a63805525c1e51aea1280deb78b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' htmlwindowname='0.25508625801771934' title='EmPortal - Ajay, Kalali' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
